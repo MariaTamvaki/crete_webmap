@@ -130,8 +130,7 @@
         }
         map.createPane('pane_CARTO_Positron_NoLabels_0');
         map.getPane('pane_CARTO_Positron_NoLabels_0').style.zIndex = 400;
-        var layer_CARTO_Positron_NoLabels_0 = L.tileLayer('https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png
-', {
+        var layer_CARTO_Positron_NoLabels_0 = L.tileLayer('https://basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
             pane: 'pane_CARTO_Positron_NoLabels_0',
             opacity: 1.0,
             attribution: '',
@@ -209,9 +208,7 @@
                         <td colspan="2">' + (feature.properties['lat'] !== null ? autolinker.link(String(feature.properties['lat']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['name_norm
-'] !== null ? autolinker.link(String(feature.properties['name_norm
-']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['name_norm'] !== null ? autolinker.link(String(feature.properties['name_norm']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
